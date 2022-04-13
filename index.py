@@ -5,7 +5,7 @@ from fastapi import FastAPI
 
 app = FastAPI()
 
-con = sqlite3.connect('./test.db')
+con = sqlite3.connect('./test2.db')
 cur = con.cursor()
 cur.execute("CREATE TABLE IF NOT EXISTS item(id integer primary key autoincrement,name text)")
 con.close()
